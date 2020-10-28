@@ -1,0 +1,58 @@
+{
+    "appenders": {
+      "app": {
+        "type": "console",
+        "layout": {
+          "type": "json"
+        }
+      },
+      "cmd": {
+        "type": "console",
+        "layout": {
+          "type": "json"
+        }
+      },
+      "resource": {
+        "type": "console",
+        "layout": {
+          "type": "json"
+        }
+      },
+      "app.routes": {
+        "type": "console",
+        "layout": {
+          "type": "json"
+        }
+      }
+    },
+    "categories": {
+      "default": { "appenders":
+      ["app"],
+        "level": "debug"
+      },
+      "app.startup": { "appenders":
+        ["app"],
+        "level": "info"
+      },
+      "docker": { "appenders":
+      ["cmd"],
+        "level": "fatal"
+      },
+      "app.resource": { "appenders":
+      ["resource"],
+        "level": "info"
+      },
+      "test": { "appenders":
+      ["app"],
+        "level": "error"
+      },
+      "setup": { "appenders":
+      ["app"],
+        "level": "info"
+      },
+      "app.routes": { "appenders":
+      ["app.routes"],
+        "level": "debug"
+      }
+    }
+  }

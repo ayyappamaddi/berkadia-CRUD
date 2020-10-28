@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nodejs:
+    build: .
+    working_dir: /usr/src/app
+    volumes:
+      - /usr/src/app/:/usr/src/app2/
+    ports:
+      - "3001:3000"
