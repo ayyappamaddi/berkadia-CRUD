@@ -7,8 +7,8 @@ Steps to execute API's in local
 - docker-compose up --build 
 
 Run api's in local envrironment
- localIP = docker default machine ip
- http://localIP:3001/v1/products/1
+localIP = docker default machine ip
+http://localIP:3001/v1/products/1
  
 ProductSchema: 
     { name: String, productType: String, productCategory: String, price: Number,  productId: Number }
